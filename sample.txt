@@ -1,2 +1,6 @@
 this is my first remote file.
+<<<<<<< Updated upstream
 this is my second editing
+=======
+hi hello everyone.
+>>>>>>> Stashed changes

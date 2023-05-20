@@ -1,0 +1,83 @@
+
+Java-Primitive data types
+Java Data Types
+As the name suggests, data types specify the type of data that can be stored inside variables in java.
+
+Java is a statically-typed language. This means that all variables must be declared before they can be used.
+
+8 Primitive Data Types
+1. boolean type
+The boolean data type has two possible values, either true or false.
+Default value: false.
+They are usually used for true/false conditions.
+2. byte type
+The byte data type can have values from -128 to 127 (8-bit signed two's complement integer).
+If it's certain that the value of a variable will be within -128 to 127, then it is used instead of int to save memory.
+Default value: 0
+3. short type
+The short data type in Java can have values from -32768 to 32767 (16-bit signed two's complement integer).
+If it's certain that the value of a variable will be within -32768 and 32767
+4. int type
+The int data type can have values from -231 to 231-1 (32-bit signed two's complement integer).
+If you are using Java 8 or later, you can use an unsigned 32-bit integer. This will have a minimum value of 0 and a maximum value of 232
+5. long type
+The long data type can have values from -263 to 263-1 .
+If you are using Java 8 or later, you can use an unsigned 64-bit integer with a minimum value of 0 and a maximum value of 264-1.
+Default value: 0
+6. double type
+The double data type is a double-precision 64-bit floating-point.
+It should never be used for precise values such as currency.
+Default value: 0.0 (0.0d)
+7. float type
+The float data type is a single-precision 32-bit floating-point.
+It should never be used for precise values such as currency.
+Default value: 0.0 (0.0f)
+8. char type
+It's a 16-bit Unicode character.
+The minimum value of the char data type is '\u0000' (0) and the maximum value of the is '\uffff'.
+Default value: '\u0000'
+Java Strings
+A String variable contains a collection of characters surrounded by double quotes.
+
+example: String name="myname";
+
+class Honda
+{
+static int dealer_id = 1234;  
+static String owner_name = "Kumar";
+int price; 
+int cc; 
+float discount;
+public static void main (String args[])
+{
+Honda shine     =  new Honda(); //new allocates memory
+Honda activa    =  new Honda(); 
+Honda unicorn   =  new Honda();
+
+shine.price=65000;
+activa.price=80000;
+unicorn.price=125000;
+shine.discount=5.0f;
+activa.discount=10.0f;
+unicorn.discount=12.0f;
+System.out.println(shine.price);
+System.out.println(shine.discount);
+System.out.println(activa.price);
+System.out.println(activa.discount);
+System.out.println(unicorn.price);
+System.out.println(unicorn.discount);
+System.out.println(owner_name);
+System.out.println(dealer_id);
+}
+}
+output:
+java Honda
+65000
+5.0
+80000
+10.0
+125000
+12.0
+Kumar
+1234
+

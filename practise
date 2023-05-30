@@ -1,0 +1,102 @@
+package com.examples;
+
+public class homework {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+homework home=new homework();
+    home.h1();
+    home.h2();
+    home.h3();
+    home.h4();
+    home.h5();
+    home.h6();
+	home.h7();
+	}
+
+	private void h7() {
+		// TODO Auto-generated method stub
+		int no=1;
+		while(no<=5)
+		{
+			System.out.println(no*(no+1)*(no+2));
+			no=no+1;
+		}
+	}
+
+	private void h6() {
+		// TODO Auto-generated method stub
+		int no=1;
+		while(no<=5)
+		{
+			
+			System.out.println(no*(no+1));
+		no=no+1;
+		}
+	}
+
+	private void h5() {
+		// TODO Auto-generated method stub
+		int no=1;
+		int no2=1;
+		while(no<=15) {
+		   
+			System.out.println(no+" ");
+			no2=no2+1;
+			no=no+no2;
+		}  
+	}
+
+	private void h4() {
+		// TODO Auto-generated method stub
+		int i=1;
+		int total=0;
+		while(i<=9) {
+			
+			System.out.println(i);
+		i=i+2;
+		}
+		System.out.println(total);
+	}
+
+	private void h3() {
+		// TODO Auto-generated method stub
+		int i=3;
+		int total=0;
+		while(i<=15) {
+			total=total+i;
+			System.out.println(i);
+			i=i+3;
+		}
+		System.out.println(total);
+	}
+
+	private void h2() {
+		// TODO Auto-generated method stub
+		int i=2;
+	int total=0;
+	while(i<=10)
+	{
+		total=total+i;
+		System.out.println(i);  
+		i=i+2;
+	}
+	System.out.println(total);
+	}
+
+	private void h1() {
+		// TODO Auto-generated method stub
+		int i=1;
+		int total=0;
+		while(i<=5) {
+			total=total+i;
+			//System.out.println(i);
+			i=i+1;
+		
+		}
+			
+	System.out.println(total);
+	}
+
+}
+

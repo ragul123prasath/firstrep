@@ -1,0 +1,33 @@
+package com.examples;
+
+public class Perfect {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Perfect p=new Perfect();
+     p.homework(4558);
+	}
+
+	private void homework(int num) {
+		// TODO Auto-generated method stub
+		int i=1;
+		int sum=0;
+		while(i<num)
+		{
+	     if(num%i==0)
+	     sum=sum+i;
+		i++;
+		}
+		if(sum==num)
+		{
+			System.out.println("perfect number");
+		}
+			else
+			{
+				System.out.println("not a perfect number");  
+		}
+		}
+		
+
+}
+

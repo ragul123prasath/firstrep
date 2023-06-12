@@ -1,0 +1,96 @@
+package com.examples;
+
+public class For_example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+For_example home= new For_example();
+		home.h1();
+	    home.h2();
+	   home.h3();
+	   home.h4();
+        home.h5();
+      home.h6();
+       home.h7();
+	}
+	private void h7() {
+		// TODO Auto-generated method stub
+		int no;
+		for(no=1;no<=5;no++)
+		{
+			System.out.println("h7 is "+no*(no+1)*(no+2));
+			
+		}
+	}
+	private void h6() {
+		// TODO Auto-generated method stub
+		int no;
+		for(no=1;no<=5;no++)
+		{
+			
+			System.out.println("h6 is "+no*(no+1));
+		
+		}
+	}
+	private void h5() {
+		// TODO Auto-generated method stub
+		int no1;
+		int no2=1;
+		for(no1=1;no1<=15;no1=no1+no2) {
+		   
+			System.out.println("h5 is "+no1);
+			no2=no2+1;
+			
+		}  
+	}
+	private void h4() {
+		// TODO Auto-generated method stub
+		int i;
+		int total=0;
+		for(i=1;i<=9;i=i+2) {
+			total=total+i;
+			//System.out.println(i);
+		
+		}
+		System.out.println("h4 is "+total);
+	}	
+	
+	private void h3() {
+		// TODO Auto-generated method stub
+		int i;
+		int total=0;
+		for(i=3;i<=15;i=i+3)
+			{
+			total=total+i;
+			//System.out.println(i);
+			
+		}
+		System.out.println("h3 is "+total);
+}
+	
+	private void h2() {
+		// TODO Auto-generated method stub
+		int i;
+		int total=0;
+		for(i=2;i<=10;i=i+2)
+		{
+			total=total+i;
+			
+		
+		}
+	System.out.println("h2 is "+total);
+	}
+	
+	
+	private void h1() {
+		// TODO Auto-generated method stub
+		int i;
+		int total=0;
+		for(i=1;i<=5;i++)
+		{
+			total=total+i;
+		}
+	System.out.println("h1 is "+total);
+	}
+	}
+

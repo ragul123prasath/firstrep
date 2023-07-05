@@ -1,0 +1,141 @@
+public class Pattern {
+
+	public static void main(String[] args) {
+		Pattern p1 = new Pattern(); 
+		//p1.pattern_Y(); 
+		//p1.pattern_M();
+		//p1.pattern_N(); 
+		//p1.pattern_X(); 
+		p1.pattern_Y2(); 
+	}
+
+	private void pattern_Y2() {
+		// TODO Auto-generated method stub
+		for(int line = 1; line<=7;line++)
+		{
+		    for(int star = 1; star<=7; star++)
+		    {
+		    if(line<=4) 
+		    {
+		    	if(star==line || star==8-line)
+		    		{
+		    		
+		    			System.out.print("* ");
+		    		}
+		    		else
+		    		{
+		    			  System.out.print("  "); 
+		    		}
+		    }
+		    else
+		    {
+		    	if(star==8-line)
+		    		System.out.print("* ");
+		    	else
+		    		System.out.print("  "); 
+		    }
+		    }
+		    System.out.println(); 
+		} 
+		
+	}
+
+	private void pattern_X() {
+		// TODO Auto-generated method stub
+		for(int line = 1; line<=7;line++)
+		{
+		    for(int star = 1; star<=7; star++)
+		    {
+		    	if(star==line || star==8-line)
+		    		{
+		    			System.out.print("* ");
+		    		}
+		    		else
+		    		{
+		    			  System.out.print("  "); 
+		    		}
+		    }
+		    System.out.println(); 
+		} 
+	
+		
+	}
+
+	private void pattern_N() {
+		// TODO Auto-generated method stub
+		for(int line = 1; line<=7;line++)
+		{
+		    for(int star = 1; star<=7; star++)
+		    {
+		    	if(star==1 || star==7 || star==line)
+		    		{
+		    			System.out.print("* ");
+		    		}
+		    		else
+		    		{
+		    			  System.out.print("  "); 
+		    		}
+		    }
+		    System.out.println(); 
+		} 
+		
+	}
+
+	private void pattern_M() {
+		// TODO Auto-generated method stub
+		for(int line = 1; line<=9;line++)
+		{
+		    for(int star = 1; star<=7; star++)
+		    {
+		    	if(line<=4)
+		    	{
+		    		if(star==line || star==8-line || star==1 || star==7)
+		    		{	System.out.print("* ");	}
+		    		else
+		    		{  System.out.print("  "); }
+		    	}
+		    	else
+		    	{
+		    		if(star==1 || star==7)
+		    		{	System.out.print("* ");	}
+		    		else
+		    			{	System.out.print("  ");}
+		    	}
+		    	
+		  
+		    }
+		    System.out.println(); 
+		} 
+		
+	}
+
+	private void pattern_Y() {
+		// TODO Auto-generated method stub
+		for(int line = 1; line<=9;line++)
+		{
+		    for(int star = 1; star<=7; star++)
+		    {
+		    	if(line<=4)
+		    	{
+		    		if(star==line || star==8-line)
+		    		{
+		    			System.out.print("* ");
+		    		}
+		    		else
+		    		{
+		    			  System.out.print("  "); 
+		    		}
+		    	}
+		    	else
+		    	{
+			    	if(star==4)
+			    		System.out.print("* ");
+			    	else
+			    		System.out.print("  ");
+		    	}
+		  
+		    }
+		    System.out.println(); 
+		} 
+	}
+}

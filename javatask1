@@ -1,0 +1,176 @@
+assignment0
+public class Theatre {
+    public static void main(String[] args) {
+        Theatre raja = new Theatre();
+        int balance = raja.bookTicket(200);
+        System.out.println("After booking ticket: " + balance);
+    }
+
+    public int bookTicket(int amount) {
+        int ticket_price = 120;
+        int balance = amount - ticket_price;
+        return balance;
+    }
+}
+
+
+
+assignment 1:
+
+The field School.salary is not visible
+class School {
+    int mark;
+    private int salary;
+    static String school_name = "St. Antony's Primary School";
+    
+    void conduct_exams() {
+        System.out.println("Exams are being conducted.");
+    }
+    
+    void publish_results(int mark) {
+        System.out.println("The mark is: " + mark);
+    }
+}
+
+public class Teacher {
+    public static void main(String[] args) {
+        School teacher = new School();
+        teacher.conduct_exams();
+        teacher.publish_results(75);
+        System.out.println(School.school_name);
+        // System.out.println(teacher.salary);
+    }
+}
+
+
+assignment 2:
+
+package bank.chennai;
+public class SBI {
+    public String empName="ragul";
+    public String empId="12";
+    public static String branch_name = "chennai";
+
+   public void get_loan(int amount) {
+        System.out.println("Loan amount: " + amount);
+    }
+
+   public void create_account() {
+        System.out.println("Account created successfully.");
+    }
+}
+
+package bank.creditcard;
+import bank.chennai.SBI;
+
+public class Account_Holder {
+    public static void main(String[] args) {
+        SBI sbi = new SBI();
+        System.out.println("Employee Name: " + sbi.empName);
+        System.out.println("Employee ID: " + sbi.empId);
+        System.out.println("Branch Name: " + SBI.branch_name);
+        sbi.get_loan(50000);
+        sbi.create_account();
+    }
+}
+
+
+package bank.madurai;
+
+import bank.chennai.SBI;
+
+public class Account_Holder_Madurai {
+    public static void main(String[] args) {
+        SBI sbi = new SBI();
+        System.out.println("Employee Name: " + sbi.empName);
+        System.out.println("Employee ID: " + sbi.empId);
+        System.out.println("Branch Name: " + SBI.branch_name);
+        sbi.get_loan(100000);
+        sbi.create_account();
+    }
+}
+
+
+assignment 3:
+
+
+class Grandma {
+    String name = "Stella";
+
+    public void work() {
+        System.out.println("Grandma is working.");
+    }
+}
+
+class Mother extends Grandma {
+    String name = "Stella";
+
+    public void work() {
+        System.out.println("Mother's name: " + name);
+        System.out.println("Superclass name: " + super.name);
+        super.work();
+    }
+}
+
+class Kid {
+    String name = "Suman";
+
+    public void work() {
+        System.out.println("Kid's name: " + name);
+        System.out.println("Superclass name: " + super.name);
+    }
+
+    public void study() {
+        System.out.println("Kid is studying.");
+        work();
+    }
+
+    public static void main(String[] args) {
+        Kid kid = new Kid();
+        kid.study();
+    }
+}
+
+
+
+assignment 4:
+
+abstract class HeadOffice {
+    public void check_accounts(int amount) {
+        System.out.println("Checking accounts with amount: " + amount);
+    }
+
+    public int pay_tax(int amount) {
+        System.out.println("Paying tax with amount: " + amount);
+        return amount;
+    }
+
+    public abstract void receive_Customers();
+}
+
+abstract class Branch_Plan extends HeadOffice {
+    public static void main(String[] args) {
+        System.out.println("Inside main method of Branch_Plan class");
+    }
+
+    public void do_interview() {
+        System.out.println("Conducting an interview");
+    }
+}
+
+class Branch extends Branch_Plan {
+    public void receive_Customers() {
+        System.out.println("Receiving customers at the branch");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Branch branch = new Branch();
+        branch.check_accounts(1000);
+        int taxAmount = branch.pay_tax(2000);
+        System.out.println("Tax Amount: " + taxAmount);
+        branch.do_interview();
+    }
+}
+
